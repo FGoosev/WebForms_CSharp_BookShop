@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SellerMaster.master.cs" Inherits="BookShp.Views.Seller.SellerMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <style>
+        *{
+            font-family:Poppins;
+        }
+        #left{
+            color:white;
+            height:1080px;
+            background-color:teal;
+        }
+        label{
+            color:white;
+        }
+    </style>
+    <link rel="stylesheet" href="../../Assets/lib/css/bootstrap.min.css"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2" id="left">
+              <div style="height:70px">
+
+              </div>
+                <div class="mb-3">
+                    <a href="Selling.aspx"><label>Billing</label></a>
+                </div>
+
+                <div class="mb-3">
+                    <a href="../Login.aspx"><label>Logout</label></a>
+                </div>
+                
+            </div>
+            <div class="col-10">
+                <form id="form1" runat="server">
+                    <div>
+                        <asp:ContentPlaceHolder ID="MyContent" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
